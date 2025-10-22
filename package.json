@@ -1,0 +1,22 @@
+{
+  "name": "mmotos",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy:preview": "npx vercel",
+    "deploy": "npx vercel --prod"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.75.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.10"
+  }
+}
