@@ -168,6 +168,11 @@ function Inicio({ onNavigate }) {
           ))}
         </div>
       </section>
+
+      {/* Leyenda de distribución */}
+      <section className="evobike-authorized">
+        Distribuidora autorizada por Evobike
+      </section>
     </>
   );
 }
@@ -470,6 +475,14 @@ function DetalleProducto({ productoId, onBack, onProductClick, productos }) {
                       <strong>Pago 100% Seguro</strong>
                       <p>Transacciones protegidas y verificadas</p>
                     </div>
+                  </div>
+                </div>
+                <div className="convenios-info">
+                  <strong>Ahora convenio con:</strong>
+                  <div className="partners-badges">
+                    <span className="partner-badge">Vanti</span>
+                    <span className="partner-badge">Addi</span>
+                    <span className="partner-badge">Banco de Bogotá</span>
                   </div>
                 </div>
               </div>
@@ -832,7 +845,7 @@ function Contacto() {
   return (
     <section className="contact">
       <h2>Contacto</h2>
-      <p>¿Tienes dudas? Escríbenos a <a href="mailto:info@mmotos.com">info@mmotos.com</a>.</p>
+  <p>¿Tienes dudas? Escríbenos a <a href="mailto:urvybike@gmail.com">urvybike@gmail.com</a>.</p>
       <p>Este sitio usa datos locales, no se envía nada a servidores externos.</p>
     </section>
   );
@@ -855,6 +868,14 @@ function Footer({ onChange, onContactoClick }) {
             <div className="footer-certifications">
               <span className="cert-badge">🌱 Eco-Friendly</span>
               <span className="cert-badge">⚡ Tecnología Avanzada</span>
+            </div>
+            <div className="footer-partners">
+              <div className="partners-title">Ahora convenio con:</div>
+              <div className="partners-badges">
+                <span className="partner-badge">Vanti</span>
+                <span className="partner-badge">Addi</span>
+                <span className="partner-badge">Banco de Bogotá</span>
+              </div>
             </div>
           </div>
 
@@ -888,11 +909,11 @@ function Footer({ onChange, onContactoClick }) {
               </div>
               <div className="contact-item">
                 <span className="contact-icon">✉️</span>
-                <span>info@mmotos.com</span>
+                <span>urvybike@gmail.com</span>
               </div>
               <div className="contact-item">
                 <span className="contact-icon">🕒</span>
-                <span>Lun-Vie: 9:00-18:00</span>
+                <span>Lun-Dom: 9:00-18:00</span>
               </div>
             </div>
           </div>
@@ -932,7 +953,7 @@ function Footer({ onChange, onContactoClick }) {
         <div className="footer-bottom">
           <div className="footer-bottom-content">
             <div className="footer-legal">
-              <span>&copy; 2025 Mmotos. Todos los derechos reservados.</span>
+              <span>&copy; 2025 Urbybike. Todos los derechos reservados.</span>
               <div className="legal-links">
                 <a href="#">Política de Privacidad</a>
                 <a href="#">Términos de Uso</a>
@@ -940,7 +961,7 @@ function Footer({ onChange, onContactoClick }) {
               </div>
             </div>
             <div className="footer-credits">
-              <span>Hecho con <span style={{color:'#ff6b6b'}}>♥</span> para un futuro más verde</span>
+              <span>Hecho con <span style={{color:'#7bff00ff'}}>♥</span> para un futuro más verde</span>
             </div>
           </div>
         </div>
@@ -1274,9 +1295,8 @@ export default function App() {
                 <div className="horarios-atencion">
                   <h4>🕒 Horarios de atención:</h4>
                   <ul>
-                    <li>Lunes a Viernes: 8:00 AM - 6:00 PM</li>
-                    <li>Sábados: 9:00 AM - 4:00 PM</li>
-                    <li>Domingos: Cerrado</li>
+                    <li>Lunes a Domingo: 9:00 AM - 6:00 PM</li>
+                  
                   </ul>
                 </div>
                 
